@@ -1,0 +1,131 @@
+<testsuites id="" name="" tests="3" failures="3" skipped="0" errors="0" time="37.067641">
+<testsuite name="Report1.spec.ts" timestamp="2026-07-21T17:35:17.440Z" hostname="chromium" tests="3" failures="3" skipped="0" time="32.514" errors="0">
+<testcase name="Sample1" classname="Report1.spec.ts" time="15.612">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\Report1-Sample1-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\Report1-Sample1-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
+<![CDATA[  [chromium] › Report1.spec.ts:2:5 › Sample1 ───────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Google1"
+    Received: "Google"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        13 × unexpected value "Google"
+
+
+      2 | test("Sample1",async({page})=> {
+      3 |     await page.goto("https://www.google.com/?zx=1784652858853");
+    > 4 |     await expect(page).toHaveTitle("Google1");
+        |                        ^
+      5 | })
+      6 | test("Sample2",async({page})=> {
+      7 |     await page.goto("https://www.google.com/?zx=1784652858853");
+        at C:\Playwright\Playwright\tests\Report1.spec.ts:4:24
+
+    Error Context: ..\..\test-results\Report1-Sample1-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\Report1-Sample1-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\Report1-Sample1-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Sample2" classname="Report1.spec.ts" time="7.258">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\Report1-Sample2-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\Report1-Sample2-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
+<![CDATA[  [chromium] › Report1.spec.ts:6:5 › Sample2 ───────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Google1"
+    Received: "Google"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        13 × unexpected value "Google"
+
+
+       6 | test("Sample2",async({page})=> {
+       7 |     await page.goto("https://www.google.com/?zx=1784652858853");
+    >  8 |     await expect(page).toHaveTitle("Google1");
+         |                        ^
+       9 | })
+      10 | test("Sample3",async({page})=> {
+      11 |     await page.goto("https://www.google.com/?zx=1784652858853");
+        at C:\Playwright\Playwright\tests\Report1.spec.ts:8:24
+
+    Error Context: ..\..\test-results\Report1-Sample2-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\Report1-Sample2-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\Report1-Sample2-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Sample3" classname="Report1.spec.ts" time="9.644">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\Report1-Sample3-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\Report1-Sample3-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
+<![CDATA[  [chromium] › Report1.spec.ts:10:5 › Sample3 ──────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Google3"
+    Received: "Google"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        14 × unexpected value "Google"
+
+
+      10 | test("Sample3",async({page})=> {
+      11 |     await page.goto("https://www.google.com/?zx=1784652858853");
+    > 12 |     await expect(page).toHaveTitle("Google3");
+         |                        ^
+      13 | })
+        at C:\Playwright\Playwright\tests\Report1.spec.ts:12:24
+
+    Error Context: ..\..\test-results\Report1-Sample3-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\Report1-Sample3-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\Report1-Sample3-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
