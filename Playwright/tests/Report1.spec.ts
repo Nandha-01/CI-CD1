@@ -11,3 +11,11 @@ test("Sample3",async({page})=> {
     await page.goto("https://www.google.com/?zx=1784652858853");
     await expect(page).toHaveTitle("Google3");
 })
+test("Sample4",async({page})=> {
+    await page.goto("https://www.google.com/?zx=1784652858853");
+    await expect(page).toHaveTitle("Google3");
+})
+test("Sample5",async({page})=> {
+    await page.goto("https://www.google.com/?zx=1784652858853");
+    await expect(page).toHaveTitle("Google3");
+})
